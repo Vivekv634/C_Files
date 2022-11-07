@@ -8,7 +8,7 @@ void parallelogram()
 
     for (int i = n; i >= 1; i--)        // Outer Loop
     {
-        for (int j = i - 1; j > 0; j--)         // 1st Inner Loop for printing spaces!
+        for (int j = i - 1; j > 0; j--)         // 1st Inner Loop for printing spaces!                  
         {
             printf("  ");
         }
