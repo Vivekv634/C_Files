@@ -29,3 +29,12 @@ int main()
     hollow_square_star_pattern_with_diagonals();
     return 0;
 }
+
+// Enter the length of the side : 7
+// * * * * * * *
+// * *       * *
+// *   *   *   *
+// *     *     *
+// *   *   *   *
+// * *       * *
+// * * * * * * *
