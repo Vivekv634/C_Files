@@ -3,7 +3,7 @@
 int main()
 {
     int num = 2;
-    if (num = 1)
+    if (num = 0)
     {
         printf("num is equal to 1");
     }
