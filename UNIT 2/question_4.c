@@ -9,8 +9,8 @@ int main()
     printf("Enter the value of B : ");
     scanf("%d", &b);
 
-    pritnf("Enter the operator (+, -, *, /) : ");
-    scanf("%d", &n);
+    printf("Enter the operator (+, -, *, /) : ");
+    scanf("%c", &n);
 
     switch (n)
     {

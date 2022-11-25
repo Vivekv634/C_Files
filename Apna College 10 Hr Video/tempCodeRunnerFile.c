@@ -1,12 +1,15 @@
-0 && marks <= 100)
+
+    // for (int i = num; i >= 1; i--)
     // {
-    //     printf("You are Pass!");
+    //     printf("%d ", i);
     // }
-    // else if (marks >= 0 && marks <= 30)
+
+    // printf("\n");
+
+    // while (num >= 1)
     // {
-    //     printf("You are Fail!");
+    //     printf("%d ", num);
+    //     num--;
     // }
-    // else
-    // {
-    //     printf("Invalid Input!");
-    // }
+
+    // printf("\n");
