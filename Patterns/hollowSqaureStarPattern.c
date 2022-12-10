@@ -27,3 +27,11 @@ int main()
     hollow_square_star_pattern();
     return 0;
 }
+
+// Enter the length of the side : 6
+// * * * * * *
+// *         *
+// *         *
+// *         *
+// *         *
+// * * * * * *

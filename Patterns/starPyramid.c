@@ -25,3 +25,9 @@ int main()
     star_pyramid();
     return 0;
 }
+
+// Enter the number of rows : 4
+//       *
+//     * * *
+//   * * * * *
+// * * * * * * *
