@@ -1,2 +1,10 @@
-
-    printf("*ptr = %d", *ptr);
+name[100];
+    char lname[50];
+    printf("Enter your First Name : ");
+    fgets(fname, 100, stdin);
+    printf("Enter your Second Name :");
+    fgets(lname, 100, stdin);
+    printf("Your name is ");
+    strcat(fname, lname);
+    printf(fname);
+    return 0;

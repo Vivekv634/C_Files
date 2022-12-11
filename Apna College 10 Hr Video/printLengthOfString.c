@@ -1,20 +1,19 @@
 #include <stdio.h>
 
-void countLength(char arr[], int *length)
+int lengthOfString(char arr[])
 {
-    for (int ch = 0; arr[ch] != "\0"; ch++)
+    int length=0;
+    for (int i = 0; arr[i] != '\0'; i++)
     {
-        *length++;
+        length++;
     }
-    
+    return length;
 }
 int main()
 {
-    int length;
     char name[100];
-    printf("Enter your full name : ");
+    printf("Enter your name : ");
     fgets(name, 100, stdin);
-    countLength(name, &length);
-    printf("Length of name : %d", length);
+    printf("Length of the String : %d", lengthOfString(name));
     return 0;
 }
