@@ -14,7 +14,7 @@ int main()
     {
         greatest = num2;
     }
-    if (greatest < num3)
+    else if (greatest < num3)
     {
         greatest = num3;
     }
