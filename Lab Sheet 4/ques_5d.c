@@ -9,7 +9,7 @@ int main()
     for (int i = 1; i <= num; i++)
     {
         k = num;
-        for (int j = 1; j <= num-i; j++, k--)
+        for (int j = 1; j <= num - i; j++, k--)
         {
             sum = i;
             printf("%d ", sum);
@@ -17,6 +17,6 @@ int main()
         }
         printf("\n");
     }
-    
+
     return 0;
 }
