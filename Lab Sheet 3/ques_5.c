@@ -1,18 +1,30 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main()
 {
-    int year;
-    printf("Enter the year no.: ");
-    scanf("%d", &year);
-    if (year % 4 == 0 || year % 100 == 0 || year % 400 == 0)
+    char ch;
+    printf("Enter the character : ");
+    scanf("%c", &ch);
+    if (isalpha(ch))
     {
-        printf("%d is a leap year!", year);
-    } else
-    {
-        printf("%d is not a leap year!", year);
+        printf("%c is an alphabet ", ch);
+        if (islower(ch))
+        {
+            printf("and also a lowercase character!");
+        }
+        else if (isupper(ch))
+        {
+            printf("and a uppercase character!");
+        }
     }
-    
-
+    else if (isblank(ch))
+    {
+        printf("Blank character is entered!");
+    }
+    else if (isdigit(ch))
+    {
+        printf("%c is a digit!", ch);
+    }
     return 0;
 }

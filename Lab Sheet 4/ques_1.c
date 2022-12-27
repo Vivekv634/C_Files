@@ -2,18 +2,30 @@
 
 int main()
 {
-    int num1, num2, sum = 0;
-    printf("Enter the value of number 1: ");
+    int num1, num2, num3, greatest;
+    printf("Enter the number 1: ");
     scanf("%d", &num1);
-    printf("Enter the value of number 2: ");
+    printf("Enter the number 2: ");
     scanf("%d", &num2);
-    for (int i = num1; i <= num2; i++)
+    printf("Enter the number 3: ");
+    scanf("%d", &num3);
+    greatest = num1;
+    if (greatest < num2)
     {
-        if (i % 2 == 0)
-        {
-            sum += i;
-        }
+        greatest = num2;
     }
-    printf("The sum of even numbers between these two numbers is %d", sum);
+    else if (greatest < num3)
+    {
+        greatest = num3;
+    }
+    if (greatest % 2 == 0)
+    {
+        printf("The greatest number is %d and also even number!", greatest);
+    }
+    else
+    {
+        printf("The greatest number is %d but an odd number!", greatest);
+    }
+
     return 0;
 }

@@ -2,29 +2,18 @@
 
 int main()
 {
-    float add(int a, int b)
+    int num1, num2, sum = 0;
+    printf("Enter the value of number 1: ");
+    scanf("%d", &num1);
+    printf("Enter the value of number 2: ");
+    scanf("%d", &num2);
+    for (int i = num1; i <= num2; i++)
     {
-        return a + b;
+        if (i % 2 == 0)
+        {
+            sum += i;
+        }
     }
-    float sub(int a, int b)
-    {
-        return a - b;
-    }
-    float div(int a, int b)
-    {
-        return a / b;
-    }
-    float multi(int a, int b)
-    {
-        return a * b;
-    }
-    float num1, num2;
-    printf("Enter the value of num1 & num2: ");
-    scanf("%f %f", &num1, &num2);
-    printf("Num1 + Num2 = %.2f\n", add(num1, num2));
-    printf("Num1 - Num2 = %.2f\n", sub(num1, num2));
-    printf("Num1 / Num2 = %.2f\n", div(num1, num2));
-    printf("Num1 * Num2 = %.2f\n", multi(num1, num2));
-
+    printf("The sum of even numbers between these two numbers is %d", sum);
     return 0;
 }

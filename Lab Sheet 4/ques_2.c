@@ -2,22 +2,42 @@
 
 int main()
 {
-    int num1, num2, gcd, lcm;
-    printf("Enter the first number : ");
-    scanf("%d", &num1);
-    printf("Enter the second number : ");
-    scanf("%d", &num2);
-
-    for (int i = 1; i <= num1 && i <= num2; ++i)
+    char ch;
+    printf("Enter the alphabet: ");
+    scanf("%c", &ch);
+    // if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+    // {
+    //     printf("Entered alphabet is vowel!");
+    // }
+    // else
+    // {
+    //     printf("Entered alphabet is not vowel!");
+    // }
+    switch (ch)
     {
-        if (num1 % i == 0 && num2 % i == 0)
-        {
-            gcd = i;
-        }
+    case 'a':
+        printf("Entered alphabet is vowel");
+        break;
+    
+    case 'e':
+        printf("Entered alphabet is vowel");
+        break;
+    
+    case 'i':
+        printf("Entered alphabet is vowel");
+        break;
+    
+    case 'o':
+        printf("Entered alphabet is vowel");
+        break;
+    
+    case 'u':
+        printf("Entered alphabet is vowel");
+        break;
+    
+    default:
+        printf("Entered alphabet is not vowel");
+        break;
     }
-
-    lcm = (num1 * num2) / gcd;
-    printf("LCM of %d and %d is %d\n", num1, num2, lcm);
-    printf("GCD of %d and %d is %d", num1, num2, gcd);
     return 0;
 }

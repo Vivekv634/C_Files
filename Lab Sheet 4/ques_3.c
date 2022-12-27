@@ -1,19 +1,14 @@
 #include <stdio.h>
-
 int main()
 {
-    int t1 = 0, t2 = 1, nextTerm = 0, n;
-    printf("Enter the positive number: ");
-    scanf("%d", &n);
-    printf("Fibonacci Series : %d %d", t1, t2);
-    nextTerm = t1 + t2;
-    while (nextTerm <= n)
+    int number, reversed = 0;
+    printf("Enter any number = ");
+    scanf("%d", &number);
+    while (number != 0)
     {
-        printf("%d ", nextTerm);
-        t1 = t2;
-        t2 = nextTerm;
-        nextTerm = t1 + t2;
+        reversed = (reversed * 10) + (number % 10);
+        number /= 10;
     }
-
+    printf("Reverse = %d", reversed);
     return 0;
 }

@@ -2,36 +2,13 @@
 
 int main()
 {
-for (int i = 1; i <= 5; i++)
-{
-    for (int j = 1; j <= i; j++)
+    int num;
+    printf("Enter the Number : ");
+    scanf("%d", &num);
+    if (num % 5 == 0 || num % 7 == 0 || num % 11 != 0)
     {
-        printf("* ");
+        printf("%d is a multiple of 5, divisible by 7 but not by eleven!", num);
     }
-    printf("\n");
-}
-for (int i = 1; i <= 7; i++)
-{
-    for (int j = 1; j <= i; j++)
-    {
-        printf("* ");
-    }
-    printf("\n");
-}
 
     return 0;
 }
-
-
-// *
-// **
-// ***
-// ****
-// *****
-// *
-// **
-// ***
-// ****
-// *****
-// ******
-// *******
