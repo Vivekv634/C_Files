@@ -11,6 +11,7 @@ int main()
         printf("Enter element %d:", i + 1);
         scanf("%f", &arr[i]);
     }
+    printf("Array:\n");
     for (int i = 0; i < n; i++)
     {
         printf("%.2f ", arr[i]);
